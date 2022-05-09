@@ -8,7 +8,7 @@ import requests, os, time
 load_dotenv()
 
 TARGET_URL = 'https://leafstailgate.com/'
-TARGET_NUMBER = '+16137123484'
+TARGET_NUMBER = os.getenv('TARGET_NUMBER')
 ACCOUNT_SID=os.getenv('ACCOUNT_SID')
 AUTH_TOKEN=os.getenv('AUTH_TOKEN')
 MESSAGING_SID=os.getenv('MESSAGING_SID')
